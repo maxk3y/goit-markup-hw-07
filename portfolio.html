@@ -23,43 +23,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="navigation-box">
-          <nav class="navigation">
-            <a class="link web-title" href=""><span class="web-half">Web</span>Studio</a>
-            <ul class="navigation-list list">
-              <li class="navigation-item">
-                <a class="link" href="./index.html">Студия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="link current" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="navigation-item"><a class="link" href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <ul class="top-contacts list">
-            <li>
-              <a class="link top-contacts-mail" href="mailto:info@devstudio.com">
-                <svg class="top-contacts-icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                <span>info@devstudio.com</span></a
-              >
+      <div class="container header__container">
+        <nav class="navigation">
+          <a class="link logo" href=""><span class="logo-half">Web</span>Studio</a>
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="link" href="./index.html">Студия</a>
             </li>
-            <li>
-              <a class="link top-contacts-tel" href="tel:+380961111111"
-                ><svg class="top-contacts-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-tel"></use></svg
-                ><span>+38 096 111 11 11</span></a
-              >
+            <li class="navigation__item">
+              <a class="link current" href="./portfolio.html">Портфолио</a>
             </li>
+            <li class="navigation__item"><a class="link" href="">Контакты</a></li>
           </ul>
-        </div>
+        </nav>
+        <ul class="connect list">
+          <li>
+            <a class="connect__mail link" href="mailto:info@devstudio.com">
+              <svg class="" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              <span>info@devstudio.com</span></a
+            >
+          </li>
+          <li>
+            <a class="connect__tel link" href="tel:+380961111111"
+              ><svg class="" width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use></svg
+              ><span>+38 096 111 11 11</span></a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -239,12 +237,12 @@
         </div>
       </section>
     </main>
-    <footer class="footer-box footer">
-      <div class="container bottom-content-centre">
+    <footer class="footer footer-box">
+      <div class="container footer-content-centre">
         <div>
-          <a class="link bottom-webstudio" href=""><span class="web-half">Web</span>Studio</a>
-          <address class="bottom-contacts bottom-contacts-box">
-            <ul class="list bottom-contacts-list">
+          <a class="logo-footer link" href=""><span class="logo-half">Web</span>Studio</a>
+          <address class="footer__contacts footer-contacts-box">
+            <ul class="contacts__list list">
               <li>
                 <a
                   class="link"
@@ -259,53 +257,52 @@
             </ul>
           </address>
         </div>
-        <div class="bottom-soc-box">
-          <p class="bottom-soc-title">Присоединяйтесь</p>
-          <ul class="site-soc list">
-            <li class="site-soc-item">
-              <a href="" class="site-soc-link link">
-                <svg class="site-soc-icon" width="20" height="20">
+        <div class="footer__soc">
+          <p class="soc__title">Присоединяйтесь</p>
+          <ul class="soc__list list">
+            <li class="">
+              <a href="" class="soc__link link">
+                <svg class="" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="site-soc-item">
-              <a href="" class="site-soc-link link">
-                <svg class="site-soc-icon" width="20" height="20">
+            <li class="">
+              <a href="" class="soc__link link">
+                <svg class="" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="site-soc-item">
-              <a href="" class="site-soc-link link">
-                <svg class="site-soc-icon" width="20" height="20">
+            <li class="">
+              <a href="" class="soc__link link">
+                <svg class="" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="site-soc-item">
-              <a href="" class="site-soc-link link">
-                <svg class="site-soc-icon" width="20" height="20">
+            <li class="">
+              <a href="" class="soc__link link">
+                <svg class="" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="bottom-subscribe">
-          <p class="bottom-subscribe-title">Подпишитесь на рассылку</p>
-          <form class="bottom-subscribe-form">
+        <div class="footer__subscribe">
+          <p class="footer__subscribe-title">Подпишитесь на рассылку</p>
+          <form class="footer__subscribe-form">
             <label class="subscribe-label" for="subscribe-email"></label>
             <input
-              class="subscribe-form-input"
+              class="subscribe__input"
               type="email"
               name="subscribe-email"
               id="subscribe-email"
               placeholder="E-mail"
               required
             />
-
-            <button type="submit" class="bottom-subscribe-button">
+            <button type="submit" class="subscribe__button">
               <div class="button-center">
                 <span>Подписаться</span>
                 <a href="" class="link ico-center">
